@@ -13,7 +13,7 @@ RUN_PREFIX ?= $(PREFIX)
 ENABLE_WEBKIT2 ?= no
 ENABLE_GTK3    ?= auto
 
-PYTHON=python3
+PYTHON=/usr/local/bin/python3
 PYTHONV=$(shell $(PYTHON) --version | sed -n /[0-9].[0-9]/p)
 COVERAGE=$(shell which coverage)
 
